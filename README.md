@@ -21,7 +21,14 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-h = { 'one' => 1, 'two' => 2, 'three' => 3 }
+h = RotationHash.new(3)
+
+h['one']   = 1
+h['two']   = 2
+h['three'] = 3
+
+p h # => { 'one' => 1, 'two' => 2, 'three' => 3 }
+
 h['whatever'] = '¯\_(ツ)_/¯'
 p h # => { 'two' => 2, 'three' => 3, 'whatever' => '¯\_(ツ)_/¯' }
 ```
